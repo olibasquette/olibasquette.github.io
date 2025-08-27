@@ -115,6 +115,94 @@
 
 		}
 
+	// Downbutton.
+		var $downbutton = $('#downbutton');
+
+		if ($downbutton.length > 0) {
+
+			// Shrink effect.
+				$main
+					.scrollex({
+						mode: 'top',
+						enter: function() {
+							$downbutton.addClass('alt');
+						},
+						leave: function() {
+							$downbutton.removeClass('alt');
+						},
+					});
+
+			// Links.
+				var $downbutton_a = $downbutton.find('a');
+
+				$downbutton_a
+					.scrolly({
+						speed: 1000,
+						offset: function() { return $downbutton.height(); }
+					})
+					.on('click', function() {
+
+						var $this = $(this);
+
+						// External link? Bail.
+							if ($this.attr('href').charAt(0) != '#')
+								return;
+
+						// Deactivate all links.
+							$downbutton_a
+								.removeClass('active')
+								.removeClass('active-locked');
+
+						// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
+							$this
+								.addClass('active')
+								.addClass('active-locked');
+
+					})
+					.each(function() {
+
+						var	$this = $(this),
+							id = $this.attr('href'),
+							$section = $(id);
+
+						// No section for this link? Bail.
+							if ($section.length < 1)
+								return;
+
+						// Scrollex.
+							$section.scrollex({
+								mode: 'middle',
+								initialize: function() {
+
+									// Deactivate section.
+										if (browser.canUse('transition'))
+											$section.addClass('inactive');
+
+								},
+								enter: function() {
+
+									// Activate section.
+										$section.removeClass('inactive');
+
+									// No locked links? Deactivate all links and activate this section's one.
+										if ($downbutton_a.filter('.active-locked').length == 0) {
+
+											$downbutton_a.removeClass('active');
+											$this.addClass('active');
+
+										}
+
+									// Otherwise, if this section's link is the one that's locked, unlock it.
+										else if ($this.hasClass('active-locked'))
+											$this.removeClass('active-locked');
+
+								}
+							});
+
+					});
+
+		}
+
 	// Scrolly.
 		$('.scrolly').scrolly({
 			speed: 1000

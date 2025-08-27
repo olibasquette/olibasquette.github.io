@@ -6,10 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Oli Basquette</title>
+		<link rel="icon" href="images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -19,19 +21,34 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<span class="logo"><img src="images/profile_photo.png" alt="Me" style="width:300px;height:300px"/></span>
+						<h1>Oli Basquette</h1>
+						<p><b>First-year Astronomy PhD Student</b><br />
+						<b>Robinson College, University of Cambridge</b></a></p>
+						<section>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-solid fa-user alt"><span class="label">IoA</span></a></li>
+								<li><a href="https://orcid.org/0009-0006-4922-0209" class="icon brands fa-orcid alt"><span class="label">ORCID</span></a></li>
+								<li><a href="https://www.linkedin.com/in/oli-basquette-8961b8232/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/olibasquette" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:osb26@ast.cam.ac.uk" class="icon fa-solid fa-envelope alt"><span class="label">Email</span></a></li>
+							</ul>
+						</section>
+						<section>
+							<div id="downbutton">
+								<center><a href="#nav" class="icon"><img src="images/downarrow2.png" alt="Down arrow" style="width:40px;height:60px"></a></center>
+							</div>
+						</section>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">About me</a></li>
+							<li><a href="#first">Research interests</a></li>
+							<li><a href="#second">Teaching</a></li>
+							<li><a href="#third">Publications</a></li>
+							<li><a href="#fourth">Talks and outreach</a></li>
 						</ul>
 					</nav>
 
@@ -43,44 +60,57 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>About me</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+										<p>I'm a first-year PhD student at the Institute of Astronomy of the University of Cambridge, 
+											affiliated with Robinson College. I can normally be found bashing my head against
+											the nearest wall trying to understand the high-redshift Universe, reading Sci-fi novels,
+											rowing on the River Cam or training a neural network to do something silly.</p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+											<li><a href="images/obasquette_cv.pdf" class="button"><b>See my CV</b></a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/rowing.png" alt="" /></span>
 								</div>
 							</section>
 
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Research Interests</h2>
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<div class="icon image-fader">
+											<img src="images/skalowantenna.png"/>
+											<img src="images/skaconfiguration.png"/>
+											<img src="images/meerkat.png"/>
+										</div>
+										<h3>Radio cosmology</h3>
+										<p>Instrument design and cosmology with the neutral hydrogen 21-cm line.</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<div class="icon image-fader">
+											<img src="images/schramm.png"/>
+											<img src="images/psychosis.png"/>
+											<img src="images/xrb.png"/>
+										</div>
+										<h3>Metal-poor stars</h3>
+										<p>Population II and III X-ray binaries, metallicity of the intergalactic medium.</p>
 									</li>
 									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<div class="icon image-fader">
+											<img src="images/lrds.png"/>
+											<img src="images/galaxy.png"/>
+											<img src="images/jwst.png"/>
+										</div>
+										<h3>High-redshift galaxies</h3>
+										<p>High-redshift galaxy formation, Little Red Dots and reionisation.</p>
 									</li>
 								</ul>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="tumbleweed.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -88,51 +118,41 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Teaching</h2>
+									<p>Notes and practice problems for the Undergraduate courses I've supervised.</p>
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="teaching.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="third" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Publications</h2>
+									<p>See a list of all my publications.</p>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="https://www.youtube.com/watch?v=-RFunvF0mDw" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="fourth" class="main special">
+								<header class="major">
+									<h2>Talks and outreach</h2>
+									<p>Browse all my academic and public talks.</p>
+								</header>
+
+								<img src="images/mosaic.png" style="height:600px" />
+
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="talks.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -141,32 +161,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Oli Basquette. Original design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>

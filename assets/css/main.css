@@ -7,6 +7,51 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.image-fader {
+  width: 300px;
+  height: 300px;
+}
+
+.image-fader img {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  animation-name: imagefade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+
+@keyframes imagefade {
+  0% {
+    opacity:1;
+  }
+  25% {
+	opacity:1;
+  }
+  33% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.image-fader img:nth-of-type(1) {
+  animation-delay: 10s;
+}
+.image-fader img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.image-fader img:nth-of-type(3) {
+  animation-delay: 0;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -100,10 +145,14 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/m106reduceddarkened.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		/*background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
+		/*background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
+		/*background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
+		/*background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1949,7 +1998,7 @@ input, select, textarea {
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgb(255, 255, 255);
 		}
 
 		input[type="submit"].primary,
@@ -2640,6 +2689,10 @@ input, select, textarea {
 		margin-bottom: 3em;
 	}
 
+	header.pagetitle {
+			margin-bottom: 2em;
+		}
+
 		header.major h2 {
 			font-size: 2em;
 		}
@@ -2674,6 +2727,13 @@ input, select, textarea {
 
 	footer.major {
 		margin-top: 3em;
+	}
+
+	@media screen and (max-width: 2000px) {
+
+		header.pagetitle {
+			margin-bottom: 2em;
+		}
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3066,7 +3126,7 @@ input, select, textarea {
 		}
 
 	.spotlight .image {
-		border-color: rgba(255, 255, 255, 0.35);
+		border-color: rgb(255, 255, 255);
 	}
 
 /* Header */
@@ -3086,7 +3146,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 14em 5em 25em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3124,6 +3184,19 @@ input, select, textarea {
 					max-width: 75%;
 				}
 
+		@media screen and (max-width: 2000px) {
+
+			#header {
+				padding: 4em 4em 0.1em 4em ;
+			}
+
+				#header.alt {
+					padding: 4em 4em 10em 4em ;
+					
+				}
+
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			#header {
@@ -3132,6 +3205,7 @@ input, select, textarea {
 
 				#header.alt {
 					padding: 6em 4em 3em 4em ;
+					
 				}
 
 		}
@@ -3216,12 +3290,12 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #636363;
+		color: #ffffff;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: #00000085;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3233,11 +3307,11 @@ input, select, textarea {
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: #431bd3;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
@@ -3245,16 +3319,16 @@ input, select, textarea {
 		}
 
 		#nav blockquote {
-			border-left-color: #dddddd;
+			border-left-color: #0bcfe9;
 		}
 
 		#nav code {
-			background: rgba(222, 222, 222, 0.25);
-			border-color: #dddddd;
+			background: rgba(204, 17, 17, 0.767);
+			border-color: #cbce12;
 		}
 
 		#nav hr {
-			border-bottom-color: #dddddd;
+			border-bottom-color: #27bd7e;
 		}
 
 		#nav + #main {
@@ -3293,11 +3367,11 @@ input, select, textarea {
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+						background-color: #33333341;
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #74747441;
 						box-shadow: none;
 					}
 
@@ -3305,7 +3379,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: rgb(0, 0, 0);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3334,25 +3408,25 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #636363;
+		background-color: #0000008f;
+		color: #ffffff;
 		border-radius: 0.25em;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main blockquote {
@@ -3379,7 +3453,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #ffffff !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3387,7 +3461,7 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: rgba(255, 255, 255, 0.25);
 			}
 
 			#main input[type="submit"]:active,
@@ -3395,7 +3469,7 @@ input, select, textarea {
 			#main input[type="button"]:active,
 			#main button:active,
 			#main .button:active {
-				background-color: rgba(222, 222, 222, 0.5);
+				background-color: rgb(255, 255, 255);
 			}
 
 			#main input[type="submit"].icon:before,
@@ -3403,7 +3477,7 @@ input, select, textarea {
 			#main input[type="button"].icon:before,
 			#main button.icon:before,
 			#main .button.icon:before {
-				color: rgba(99, 99, 99, 0.25);
+				color: rgb(255, 255, 255);
 			}
 
 			#main input[type="submit"].primary,
@@ -3696,8 +3770,10 @@ input, select, textarea {
 	}
 
 		#footer > * {
-			width: calc(50% - 2em);
-			margin-left: 2em;
+			/*width: calc(50% - 2em);*/
+			width: 100%;
+			/*margin-left: 2em;*/
+			text-align: center;
 		}
 
 		#footer .copyright {
