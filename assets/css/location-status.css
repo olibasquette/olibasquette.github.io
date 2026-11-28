@@ -1,0 +1,12 @@
+.location-status {
+	width: fit-content;
+	max-width: calc(100% - 2rem);
+	margin: 1rem 1rem 0;
+	padding: 0.5rem 0.75rem;
+	background: #000;
+	border: 1px solid #354b3b;
+	border-radius: 0.25rem;
+	color: #a2f4ac;
+	font: 400 0.875rem/1.4 ui-monospace, SFMono-Regular, Consolas, monospace;
+	overflow-wrap: anywhere;
+}
