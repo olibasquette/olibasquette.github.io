@@ -1,0 +1,24 @@
+.location-status {
+	width: fit-content;
+	max-width: calc(100% - 2rem);
+	margin: 1rem 1rem 0;
+	padding: 0.5rem 0.75rem;
+	background: #000;
+	border: 1px solid currentColor;
+	border-radius: 0.25rem;
+	color: #b6bec5;
+	font: 400 0.875rem/1.4 ui-monospace, SFMono-Regular, Consolas, monospace;
+	overflow-wrap: anywhere;
+}
+
+.location-status[data-location="home"] {
+	color: #ff7676;
+}
+
+.location-status[data-location="office"] {
+	color: #a2f4ac;
+}
+
+.location-status[data-location="elsewhere"] {
+	color: #ffb45e;
+}
